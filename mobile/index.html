@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mobile-main.css">
+</head>
+<body>
+    <header>
+        <div id="social">
+            <a href="https://www.facebook.com/tarasbandrivskyy"><img src="../images/icon1.png" alt="" class="icons icon1"></a>
+            <a href="https://www.instagram.com/taras_bandrivsky/?hl=uk"><img src="../images/icon2.png" alt="" class="icons icon2"></a>
+            <a href="https://www.linkedin.com/in/taras-bandrivskyy-1843b71a2/"><img src="../images/icon3.png" alt="" class="icons icon3"></a>
+        </div>
+        <div class="go-to-portolio">
+            <a href="../index.html"><img class="bord" src="../images/drawing.svg" alt=""></a>
+        </div>
+    </header>
+    <div id="main">
+        <h2>Taras Bandrivskyy</h2>
+        <img class="image-web" src="web.jpg" alt="">
+        <p>Jeszcze od małego lubiłem technologie komputerowe,
+            programowanie, internet.  Lecz przez nieświadomość wyboru, studia ukończyłem na innym kierunku.  Uświadomiwszy i  przeanalizowawszy siebie, wróciłem do swojej pasji. Po 6 miesiącach samonauczania i ukończonego kursu Front End Developer, gotowy rozpocząć drogę jako Junior Front End WEB Developer, pracując  sumiennie nad sobą tak jak ja nad rozwojem firmy.
+        </p>
+        <div class="download"><a href="../cv/CV_Taras_Bandrivskyy.pdf" download>Pobierz CV</a></div>
+    </div>
+    <div id="portfolio">
+        <h2>Portfolio</h2>
+        <div id="projects-box">
+            <div class="project1 projects">
+                <div class="projects-hover">
+                    <h4>Nazwa: Zaplanój swój dzień!</h4>
+                    <p>Wykorzystałem umiejętności: React JS</p>
+                    <p>Opis: zrobiono na rysunku deski: lewa strona dodaje i po kliknięciu usuwa notatki;
+                        prawa dodaje sprawy do zrobienia, po kliknięciu ich zakreszla, na dole jest możliwość 
+                    filtrowania + usuwania zrobionych spraw.
+                    </p>
+                    <div class="go_to">
+                        <a href="https://github.com/bandrivtara/bandrivtara.github.io.git" class="go_to_item" target="_blank">Code</a>
+                        <a href="../project1/" class="go_to_item" target="_blank">Live</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project2 projects">
+                <div class="projects-hover">
+                    <h4>Nazwa: Bitcoin dla ciebie!</h4>
+                    <p>Wykorzystałem umiejętności: Ajax, Bootstrap</p>
+                    <p>Stronę zrobiono w celu śledzenia aktualnego kursu Bitcoina, wraz z informacjami potrzebny aby rozpocząć inwestowanie.
+                    </p>
+                    <div class="go_to">
+                        <a href="https://github.com/bandrivtara/bandrivtara.github.io.git" class="go_to_item" target="_blank">Code</a>
+                        <a href="../project2/" class="go_to_item" target="_blank">Live</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project3 projects">
+                <div class="projects-hover">
+                    <h4>Nazwa: Let's Surf!</h4>
+                    <p>Wykorzystałem umiejętności: Gulp, Sass, jquery, RWD. (Także animate.css, wow.js, slick) </p>
+                    <p>Opis: Projekt główny, zrobiony z wykorzystaniem nowoczesnego szablonu z animacjami, sliderami i responsywnością.
+                        Enjoy! =)
+                    </p>
+                    <div class="go_to">
+                        <a href="https://github.com/bandrivtara/bandrivtara.github.io.git" class="go_to_item" target="_blank">Code</a>
+                        <a href="../project3/" class="go_to_item" target="_blank">Live</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="feedback">
+        <h2>Napisz do mnie</h2>
+        <form id="form">
+            <input type="text" name="name" placeholder="Twoje imię" required /><br />
+            <input type="text" name="phone" placeholder="Twój e-mail" required /><br />
+            <input type="text" name="email" placeholder="Temat" required /><br />
+            <textarea name="text" placeholder="Wiadomość"></textarea>
+            <button class="form-btn">Wyślij</button>
+        </form>
+    </div>
+    <footer>
+        <a href=""></a>
+        <p>Copyright 2020 Taras Bandrivskyy</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script type='text/javascript'>
+        if(window.innerWidth>860)
+            location.href='../index.html';
+    </script>
+
+    <script src="mobile-main.js"></script>
+</body>
+</html>

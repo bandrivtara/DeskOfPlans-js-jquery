@@ -1,0 +1,74 @@
+@media (max-width: 2560px) {
+    .quote {
+        font-size: 14px;
+    }
+
+    .feedback  input, button, textarea, .download a, .projects-hover p {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1980px) {
+    .quote {
+        font-size: 12px;
+    }
+
+    .feedback  input, button, textarea, .download a, .projects-hover p {
+        font-size: 12px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1700px) {
+    .quote {
+        font-size: 9px;
+    }
+
+    .feedback  input, button, textarea, .download a, .projects-hover p {
+        font-size: 8px;
+    }
+
+    h2 {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .quote {
+        font-size: 6px;
+    }
+
+    .feedback  input, button, textarea, .download a, .projects-hover p {
+        font-size: 4px;
+    }
+
+    .button {
+        padding: 0;
+    }
+
+    h2 {
+        font-size: 6px;
+    }
+}
+
+@media (max-width: 1024px) {
+    h2 {
+        font-size: 6px;
+    }
+
+    .project-title {
+        font-size: 16px;
+    }
+
+    .feedback  input, button, textarea, .download a, .projects-hover p {
+        font-size: 3px;
+    }
+
+}

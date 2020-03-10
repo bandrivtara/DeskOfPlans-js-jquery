@@ -1,0 +1,425 @@
+body {
+    margin: auto;
+    background: rgb(218, 214, 214);
+}
+
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right:0;
+    bottom:0;
+    background: url(../images/intro1.jpg) #bbb no-repeat;
+    background-size: contain;
+    background-position: center;
+    z-index: 30;
+    animation: animate-preloader 5s;
+    filter: grayscale(100%) blur(1.5px); 
+    transform: scale(1.6); 
+}
+
+@keyframes animate-preloader {
+    0%   {transform: scale(1);
+    }
+  50%  {transform: scale(1.6);}
+  100% {transform: scale(1.6);}
+}
+
+.body_back {
+    position: absolute;
+    width: 100%;
+    height: 65vw;
+    background-color: #22313b6b;
+    z-index: 5;
+    display: none;
+    cursor: pointer;
+}
+
+.zoom-out {
+    position: absolute;
+    width: 100%;
+    right: 0;
+}
+
+.desk-container {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    min-height: 65vw;
+    width: 90vw;
+    background:url(../images/drawing.svg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: 1s;
+}
+
+.desk {
+    position: absolute;
+    top: 4vw;
+    left: 2vw;
+    width: 86vw;
+    height: 58vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.l-side {
+    width: 51%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.r-side {
+    position: relative;
+    width: 50%;
+    background-image: url(../images/r-side.svg);
+    background-size: cover;
+    cursor: zoom-in;
+}
+
+
+.cv-area, .projects-bottom {
+    flex-basis: 45%;
+    height: 50%;
+    position: relative;
+}
+
+.projects-top, .hobbies {
+    flex-basis: 55%;
+    height: 50%;
+}
+
+.cv-area {
+    position: relative;
+}
+
+.cv {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    background: url(../cv/CV_Taras_Bandrivskyy.jpg) #D4DDD5 no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin:auto;
+    top: 10%;
+    right: 0;
+    bottom: 30px;
+    left: 0;
+    border: 1px solid #000;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.download {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 7%;
+    text-align: center;
+    background-color: #303030;
+    border-top: 0.5px solid #fff;
+}
+
+.download a {
+    font-family: 'Shadows Into Light', cursive;
+    text-decoration: none;
+    color: #fff;
+    font-size: 8px;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.hobbies {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.photo-box {
+    position: relative;
+    flex-basis: 30%;
+    height: 24%;
+    background: #fff;
+    border: 1px solid #000;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.quote {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    margin: 0;
+    font-size: 6px;
+    font-family: 'Sriracha', cursive;
+}
+
+.quote-box {
+    position: relative;
+    display: table;
+    border: 0.4px solid #22313b;
+    background: #fff;
+    background: url(../images/paper-2500942_640.jpg) no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    transition: 1s;
+    flex-basis: 27%;
+    height: 20%;
+}
+
+.project-title {
+    text-align: center;
+    background: rgb(248, 246, 246);
+    border: 0.4px solid black;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.projects-bottom {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projects-box {
+    display: flex;
+    height: 100%;
+}
+
+.projects {
+    position: relative;
+    flex-basis: 49%;
+    border: 1px solid #000;
+    cursor: pointer;
+    transition: 1s;
+    height: 56%;
+}
+
+.project-title {
+    font-size: 20px;
+}
+
+.project1 {
+    background: url(../images/project1.png);
+    background-size: cover;
+}
+
+.project2 {
+    background: url(../images/project2.png);
+    background-size: contain;
+    align-self: center;
+    margin-left: -10%;
+}    
+
+.project3 {
+    background: url(../images/project3.png);
+    background-size: cover;
+    flex-basis: 60%;
+    margin-top: -25%;
+}
+
+.feedback {
+    position: relative;
+    flex-basis: 80%;
+    height: 31%;
+    border: 1px solid #000;
+    transition: 1s;
+    background: url(../images/paper-2500942_640.jpg) #fff no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Shadows Into Light', cursive;
+    cursor: pointer;
+}
+
+.photo-item {
+    display: block;
+    position: absolute;
+    height: 76%;
+    width: 74%;
+    border: thin solid #000;
+    top: 7%;
+    right: 14%;
+    filter: grayscale(100%);
+    filter: gray;
+    transition: 1s;
+}
+
+.text-boxes {
+    position: absolute;
+    width: 86px;
+    height: 24px;
+}
+.text-box1 {
+    top: 50px;
+    left: 8px;
+}
+
+.pins {
+    position: absolute;
+    top: 2%;
+    width: 1vw;
+    height: 1vw;
+}
+
+.animate {
+    transform: scale(2) translateX(50%) translateY(12%);
+    transition: 1s;
+}
+
+.animate-cv {
+    transform: scale(2.6) translateX(78%) translateY(28%);
+    transition: 1s;
+}
+
+.animate-huge {
+    transform: scale(3) translateX(50%);
+    transition: 1s;
+}
+
+.pin-left {
+    left: 15%;
+}
+
+.pin-right {
+    right: 15%;
+}
+
+.pin-middle {
+    left: 50%;
+}
+
+.title-paper {
+    position: relative;
+}
+
+.scale-rside {
+    transform: scale(1.5) translateX(-250px) translateY(90px);
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 11px;
+    font-weight: 600;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+h2 {
+    font-size: 10px;
+    text-align: center;
+    margin-top: 5px;
+    
+}
+
+.feedback  input, button, textarea {
+    font-family: 'Shadows Into Light', cursive;
+    width: 80%;
+    flex-basis: 48%;
+    height: 2%;
+    font-size: 6px;
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    resize: none;
+}
+
+.massage {
+    flex-basis: 90%;
+}
+
+.feedback  button {
+    width: 100%;
+    padding: 0;
+}
+
+.feedback  input:focus, textarea:focus {
+    border-bottom: 0.5px solid rgb(83, 83, 83);
+    outline: none;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.feedback .button{
+    width: 80%;
+    font-family: 'Shadows Into Light', cursive;
+    padding: 2px;
+    margin-top: 2px;
+    border: 0.5px solid rgb(83, 83, 83)
+}
+
+.airplane {
+    position: absolute;
+    width: 15px;
+    height: 16px;
+    transition: 2s;
+    top:-1.5px;
+    left: 0;
+}
+
+.airplane-animate {
+    transform: translateX(20px);
+}
+
+.button {
+    position: relative;
+}
+
+.icons {
+    width: 2vw;
+}
+
+.projects-hover {
+    position: relative;
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects-hover h4 {
+    margin: 0;
+    font-size: 10px;
+    color: #D4DDD5;
+    text-align: center;
+}
+
+.projects-hover p {
+    padding: 3px;
+    margin: 0;
+    font-size: 7px;
+    color: #D4DDD5;
+    text-align: left;
+}
+
+.go_to {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: url(../images/git.png) #D4DDD5;
+    height: 34px;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: 1s;
+}
+
+.go_to_item {
+    width: 50%;
+    height: 100%;
+    display: none;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    line-height: 32px;
+    background: #D4DDD5;
+    border-right: 0.1px solid black;
+    border-left: 0.1px solid black;
+}

@@ -1,0 +1,212 @@
+body {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.image-web {
+    width: 250px;
+    border-radius: 150px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #303030;
+    width: 100%;
+} 
+
+#social, .go-to-portolio {
+    margin: 0 15px;
+}
+
+p {
+    text-align: center;
+    font-weight: 600;
+    color: #303030;
+}
+
+.download {
+    width: 160px;
+    height: 40px;
+    background-color: #303030;
+}
+
+.download a {
+    display: block;
+    color: #D4DDD5;
+    font-size: 26px;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.bord {
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+}
+
+#main {
+    background: #D4DDD5;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 52px 4%;
+}
+
+#portfolio {
+    background: #303030;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    color: #D4DDD5;
+}
+
+#feedback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: #D4DDD5;
+}
+
+#form {
+    width: 80%;
+}
+
+input {
+    width: 100%;
+    margin-top: 15px;
+    height: 20px;
+    border: 1px solid #303030;
+}
+
+textarea {
+    width: 100%;
+    margin: 15px 00;
+    resize: none;
+    height: 60px;
+    border: 1px solid #303030;
+}
+
+button {
+    margin: 20px 0;
+    width: 100%;
+    height: 40px;
+    color: #D4DDD5;
+    font-size: 26px;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    background: #303030;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background: #303030;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+}
+
+footer p {
+    color: #D4DDD5;
+}
+
+#projects-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.projects {
+    margin: 20px 0;
+    flex-basis: 40%;
+    height: 200px;
+    background: #fff;
+}
+
+.projects-hover {
+    position: relative;
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects-hover h4 {
+    margin: 0;
+    font-size: 10px;
+    color: #D4DDD5;
+    text-align: center;
+}
+
+.projects-hover p {
+    padding: 3px;
+    margin: 0;
+    font-size: 7px;
+    color: #D4DDD5;
+    text-align: left;
+}
+
+.project1 {
+    background-image: url(../images/project1.png);
+    background-size: cover;
+}
+
+.project2 {
+    background-image: url(../images/project2.png);
+    background-size: cover;
+}
+
+.project3 {
+    background-image: url(../images/project3.png);
+    background-size: cover;
+}
+
+.go_to {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: url(../images/git.png) #D4DDD5;
+    height: 34px;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: 1s;
+}
+
+.go_to_item {
+    width: 50%;
+    height: 100%;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    line-height: 32px;
+    background: #D4DDD5;
+    border-right: 0.1px solid black;
+    border-left: 0.1px solid black;
+}
